@@ -24,35 +24,69 @@
             <h1>Hi, I'm <span>Harshal Zade</span> <br> From Nagpur</h1>
         </div>
     </div>
-
-    </div>
+ </div>
 
     <!--------about------->
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png" >
+         </div>
+         <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Dolores autem do amet consectetur adipisicing elit. Sint placeat saepe,
+                   tempora consequuntur sit nam! Beatae, quis natus perferendis, 
+                   repellat quidem tenetur soluta voluptatum consectetur ad ipsa 
+                   placeat quasi assumenda!</p>
+     
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores autem doloremque adipisci laboriosam! Nihil aliquam nam dolor. Soluta nesciunt tenetur ut quaerat. Aspernatur possimus minus voluptas soluta consequatur recusandae numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint placeat saepe, tempora consequuntur sit nam! Beatae, quis natus perferendis, repellat quidem tenetur soluta voluptatum consectetur ad ipsa placeat quasi assumenda!</p>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills</span><br>Java, SQL, Manual Testing, Automation Testing Using Selenium, HTML/CSS</li>
+                        <li><span>Languages</span><br>Marathi, Hindi, English</li>
+                        <li><span>Courses</span><br>Full Stack Development</li>
+                    </ul>
                 </div>
-
-                <div class="tab-titles">
-                <p class="tab-links active-link">Skills</p>
-                <p class="tab-links">Experience</p>
-                <p class="tab-links">Education</p>
-            </div>
-            <div class="tab-contents">
-                <ul>
-                    <li><span>Technical Skills</span><br>Java, SQL, Manual Testing, Automation Testing Using Selenium, HTML/CSS</li>
-                    <li><span>Languages</span><br>Marathi, Hindi, English</li>
-                    <li><span>Courses</span><br>Full Stack Development</li>
-                    
-                </ul>
-            </div>
-        </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>At creation for 6 months</li>
+                        <li><span>2023</span><br>Attended workshop of uiux design</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br> PJLCE Nagpur </li>
+                        <li><span>2019</span><br> JVV Umred </li>
+                        <li><span>2017</span><br> JVV WCL </li>
+                    </ul>
+                </div>
+       </div>
     </div>
+  </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+      
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+    }
+    
+
+</script>           
 </body>
 </html>
