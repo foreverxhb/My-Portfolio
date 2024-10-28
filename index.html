@@ -48,23 +48,24 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Technical Skills</span><br>Java, SQL, Manual Testing, Automation Testing Using Selenium, HTML/CSS</li>
+                        <li><span>Technical Skills</span><br>Java, SQL, Manual Testing, Selenium, HTML/CSS, JavaScript</li>
                         <li><span>Languages</span><br>Marathi, Hindi, English</li>
-                        <li><span>Courses</span><br>Full Stack Development</li>
+                        <li><span>Certifications</span><br>Full Stack Course (Qspiders, Pune), Online Course in Web Development (Udemy), Certificate Of Technical Achievement in JavaScript</li>
+                        <li><span>Software</span><br>Visual Studio Code, Eclipse IDE, GitHub, Photoshop, Illustrator, Android Studio, SQL, MS FrontPage/Teams/Excel/Word,Zoom</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023</span><br>At creation for 6 months</li>
-                        <li><span>2023</span><br>Attended workshop of uiux design</li>
+                        <li><span>Internship (6 months)</span><br>at-Creation Design School, New Nandanvan, Nagpur</li>
+                        
                         
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2023</span><br> PJLCE Nagpur </li>
-                        <li><span>2019</span><br> JVV Umred </li>
-                        <li><span>2017</span><br> JVV WCL </li>
+                        <li><span>2023</span><br> Priyadarshini JL College Of Engineering, New Nandanvan, Nagpur </li>
+                        <li><span>2019</span><br> 12th, Jeevan Vikas Vidyalaya, Umred </li>
+                        <li><span>2017</span><br> 10th, Jeevan Vikas Vidyalaya, WCL, Umred </li>
                     </ul>
                 </div>
        </div>
@@ -83,7 +84,8 @@
         for(tabcontent of tabcontents ){
             tabcontent.classList.remove("active-tab");
         }
-        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
     
 
