@@ -1,3 +1,2 @@
-# MyPortfolio
-my person portfolio website
+# My Personal Portfolio Website
 using html css and js
