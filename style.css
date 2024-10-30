@@ -168,6 +168,12 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+/*--------portfolio-------------------*/
+#portfolio{
+    padding: 50px 0;
+
+}
+
 /*---------------contact me ------------*/
 .contact-left{
     flex-basis: 35%;
@@ -310,4 +316,25 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+}
+.srgs-project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.srgs{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.srgs img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.srgs:hover img{
+    transform: scale(1.1);
+
 }
